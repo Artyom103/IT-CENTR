@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галирея</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #2d395a;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .page-title {
+            color: white;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            padding: 15px 40px;
+            background: #3373e9;
+            color: #f3f3f7;
+            border: 2px solid white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            background: #295bc5;
+        }
+
+        .gallery {
+            max-width: 800px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* ОБЩИЕ СТИЛИ ДЛЯ ФОТО */
+        .photo {
+            object-fit: cover;
+            border: 4px solid #f9f9fc;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .photo:hover {
+            transform: scale(1.02);
+        }
+
+        .footer-text {
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">Галирея Фото</h1>
+
+    <div class="gallery">
+        <!-- Теперь можно менять размер каждой фото индивидуально -->
+        <img src="C:\Users\user\Desktop\Новая папка (4)\4.jpg" 
+             class="photo" 
+             style="width: 400px; height: 300px;">
+
+        <img src="C:\Users\user\Desktop\Новая папка (4)\5.jpg" 
+             class="photo" 
+             style="width: 350px; height: 250px;">
+
+        <img src="C:\Users\user\Desktop\Новая папка (4)\6.jpg" 
+             class="photo" 
+             style="width: 300px; height: 200px;">
+
+    </div>
+
+    <div class="footer-text">
+        <p>IT</p>
+        <p>CENTR</p>
+    </div>
+
+    <a href="C:\Users\user\Desktop\Новая папка (4)\1.html" class="back-btn">Назад</a>
+</body>
+</html>
